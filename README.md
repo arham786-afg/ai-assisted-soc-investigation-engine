@@ -62,11 +62,11 @@ Windows Security & PowerShell Logs (EVTX)
 ---
 
 📊 Results & Metrics
-Metric          	      Value
-Manual MTTR      	      ~22 minutes
-AI-Assisted MTTR	      ~1.5 minutes
-MTTR Reduction	        ~93%
-Analyst Pivots	        ~15 → 1–3
+Metric           	 Value
+Manual MTTR       	 ~22 minutes
+AI-Assisted MTTR	 ~1.5 minutes
+MTTR Reduction	 ~93%
+Analyst Pivots	 ~15 → 1–3
 
 ---
 
