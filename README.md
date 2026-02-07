@@ -30,6 +30,7 @@ The system:
 
 🧠 Architecture Flow
 
+```
 Windows Security & PowerShell Logs (EVTX)
                 ↓
         Parsing & Normalization
@@ -45,6 +46,7 @@ Windows Security & PowerShell Logs (EVTX)
  Decision + Confidence + MITRE Mapping
                 ↓
    Incident Dossier (JSON Output)
+```
 
 ---
 
@@ -62,15 +64,19 @@ Windows Security & PowerShell Logs (EVTX)
 ---
 
 📊 Results & Metrics
-Metric           	 Value
-Manual MTTR       	 ~22 minutes
-AI-Assisted MTTR	 ~1.5 minutes
-MTTR Reduction	 ~93%
-Analyst Pivots	 ~15 → 1–3
+
+| Metric | Value |
+|--------|-------|
+| Manual MTTR | ~22 minutes |
+| AI-Assisted MTTR | ~1.5 minutes |
+| MTTR Reduction | ~93% |
+| Analyst Pivots | ~15 → 1–3 |
 
 ---
 
 🚨 Example AI Output
+
+```
 Decision           : ESCALATE
 Confidence         : HIGH
 Host Risk Level    : MEDIUM
@@ -83,6 +89,7 @@ Recommended Actions:
 - Isolate affected host
 - Collect LSASS telemetry
 - Review authentication failures
+```
 
 ---
 
@@ -90,6 +97,7 @@ Recommended Actions:
 
 Each investigation generates a SOC-ready JSON artifact:
 
+```json
 {
   "decision": "ESCALATE",
   "confidence": "HIGH",
@@ -106,6 +114,7 @@ Each investigation generates a SOC-ready JSON artifact:
   ],
   "mttr_reduction_percent": 93.18
 }
+```
 
 ---
 
@@ -126,13 +135,17 @@ Each investigation generates a SOC-ready JSON artifact:
 ⚙️ Setup & Usage
 
 Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 Run pipeline
+```bash
 python parser/normalize.py
 python parser/timeline.py
 python parser/enrichment.py
 python parser/ai_pivot_engine.py
+```
 
 ---
 
