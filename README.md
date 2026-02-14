@@ -167,5 +167,13 @@ This project is for defensive security research and educational purposes only.
 
 **👤 Author**
 
-Arham
-Security Engineering / SOC Automation
+Mohammed Bilaal Arham
+CyberSecurity AI-Assisted Detection & Response Engineer
+
+GitHub: https://github.com/arham786-afg
+
+LinkedIn: https://www.linkedin.com/in/mb-arham
+
+Email: mbarham786@gmail.com
+
+Portfolio: https://arhamportfolio-sand.vercel.app
