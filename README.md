@@ -168,6 +168,7 @@ This project is for defensive security research and educational purposes only.
 **👤 Author**
 
 Mohammed Bilaal Arham
+
 CyberSecurity AI-Assisted Detection & Response Engineer
 
 GitHub: https://github.com/arham786-afg
