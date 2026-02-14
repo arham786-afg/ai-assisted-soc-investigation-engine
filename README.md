@@ -173,8 +173,8 @@ CyberSecurity AI-Assisted Detection & Response Engineer
 
 GitHub: https://github.com/arham786-afg
 
-LinkedIn: https://www.linkedin.com/in/mb-arham
+📧 Email: mbarham786@gmail.com
 
-Email: mbarham786@gmail.com
+💼 LinkedIn:  https://www.linkedin.com/in/mb-arham
 
-Portfolio: https://arhamportfolio-sand.vercel.app
+🌐 Portfolio: [Arham portfolio.com](https://arhamportfolio-sand.vercel.app)
